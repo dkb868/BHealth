@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:clickable="false"
+                android:id="@+id/mealInfoListItemProteinTextView">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Title"
+        android:paddingRight="10dp"
+        android:id="@+id/foodTitleTextView"
+        android:textSize="20sp"
+        android:clickable="false"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/foodAddButton"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/foodMinusButton"
+        android:layout_toStartOf="@+id/foodMinusButton"
+        android:focusable="false"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/foodMinusButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:focusable="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/mealInfoListItemCaloriesTextView"
+        android:layout_below="@+id/foodTitleTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/foodTitleTextView"
+        android:layout_toRightOf="@+id/foodTitleTextView"
+        android:layout_toEndOf="@+id/foodTitleTextView"/>
+
+</RelativeLayout>
